@@ -56,10 +56,10 @@ console.log(`Sent: ${result.data.totalSent}`);
 import { TextWave } from 'textwave-sdk';
 
 // With API key only (uses default API URL)
-const client = new TextWave('tw_xxxxxxxxxxxxxxxx');
+const client = new TextWave('sk_live_xxxxxxxxxxxxxxxx');
 
 // With custom API URL
-const client = new TextWave('tw_xxxxxxxxxxxxxxxx', 'https://api.textwave.co.ke/v1');
+const client = new TextWave('sk_live_xxxxxxxxxxxxxxxx', 'https://api.textwave.co.ke/v1');
 ```
 
 ### Send SMS

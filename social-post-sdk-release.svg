@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b"/>
+      <stop offset="50%" style="stop-color:#065f46"/>
+      <stop offset="100%" style="stop-color:#047857"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="#10b981" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="250" fill="#34d399" opacity="0.1"/>
+  <circle cx="900" cy="50" r="150" fill="#10b981" opacity="0.08"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-opacity="0.05" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Left side content -->
+  <g transform="translate(80, 80)">
+    <!-- NEW badge -->
+    <rect x="0" y="0" width="80" height="32" rx="16" fill="#10b981"/>
+    <text x="40" y="22" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">NEW</text>
+    
+    <!-- Main title -->
+    <text x="0" y="90" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="white">TextWave SDK</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#34d399">for JavaScript</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="210" font-family="Arial, sans-serif" font-size="24" fill="#a7f3d0" opacity="0.9">Send Bulk SMS in Kenya with just a few lines of code</text>
+    
+    <!-- Features list -->
+    <g transform="translate(0, 260)">
+      <circle cx="12" cy="12" r="12" fill="#10b981"/>
+      <text x="12" y="17" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">✓</text>
+      <text x="35" y="18" font-family="Arial, sans-serif" font-size="18" fill="white">TypeScript Support</text>
+      
+      <circle cx="220" cy="12" r="12" fill="#10b981"/>
+      <text x="220" y="17" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">✓</text>
+      <text x="243" y="18" font-family="Arial, sans-serif" font-size="18" fill="white">Full API Coverage</text>
+    </g>
+    
+    <g transform="translate(0, 305)">
+      <circle cx="12" cy="12" r="12" fill="#10b981"/>
+      <text x="12" y="17" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">✓</text>
+      <text x="35" y="18" font-family="Arial, sans-serif" font-size="18" fill="white">ESM &amp; CommonJS</text>
+      
+      <circle cx="220" cy="12" r="12" fill="#10b981"/>
+      <text x="220" y="17" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">✓</text>
+      <text x="243" y="18" font-family="Arial, sans-serif" font-size="18" fill="white">Zero Dependencies</text>
+    </g>
+    
+    <!-- npm install command -->
+    <g transform="translate(0, 370)">
+      <rect x="0" y="0" width="340" height="50" rx="8" fill="#0f172a"/>
+      <text x="20" y="32" font-family="monospace" font-size="18" fill="#94a3b8">$</text>
+      <text x="45" y="32" font-family="monospace" font-size="18" fill="#10b981">npm install</text>
+      <text x="175" y="32" font-family="monospace" font-size="18" fill="white">textwave-sdk</text>
+    </g>
+  </g>
+  
+  <!-- Right side - Code preview -->
+  <g transform="translate(620, 100)">
+    <!-- Code window -->
+    <rect x="0" y="0" width="500" height="380" rx="12" fill="url(#codeGrad)"/>
+    
+    <!-- Window header -->
+    <rect x="0" y="0" width="500" height="40" rx="12" fill="#1e293b"/>
+    <rect x="0" y="28" width="500" height="12" fill="#1e293b"/>
+    <circle cx="25" cy="20" r="6" fill="#ef4444"/>
+    <circle cx="50" cy="20" r="6" fill="#fbbf24"/>
+    <circle cx="75" cy="20" r="6" fill="#22c55e"/>
+    <text x="250" y="25" font-family="monospace" font-size="12" fill="#64748b" text-anchor="middle">send-sms.ts</text>
+    
+    <!-- Code content -->
+    <g transform="translate(25, 60)" font-family="monospace" font-size="15">
+      <text y="0" fill="#c084fc">import</text>
+      <text x="55" y="0" fill="#94a3b8">{</text>
+      <text x="65" y="0" fill="#fbbf24">TextWave</text>
+      <text x="155" y="0" fill="#94a3b8">}</text>
+      <text x="170" y="0" fill="#c084fc">from</text>
+      <text x="210" y="0" fill="#a5f3fc">'textwave-sdk'</text>
+      
+      <text y="35" fill="#64748b">// Initialize client</text>
+      
+      <text y="70" fill="#c084fc">const</text>
+      <text x="50" y="70" fill="#f8fafc">client</text>
+      <text x="105" y="70" fill="#94a3b8">=</text>
+      <text x="120" y="70" fill="#c084fc">new</text>
+      <text x="160" y="70" fill="#fbbf24">TextWave</text>
+      <text x="240" y="70" fill="#94a3b8">(</text>
+      <text x="250" y="70" fill="#a5f3fc">'your_api_key'</text>
+      <text x="380" y="70" fill="#94a3b8">)</text>
+      
+      <text y="120" fill="#64748b">// Send SMS to multiple recipients</text>
+      
+      <text y="155" fill="#c084fc">const</text>
+      <text x="50" y="155" fill="#f8fafc">result</text>
+      <text x="100" y="155" fill="#94a3b8">=</text>
+      <text x="115" y="155" fill="#c084fc">await</text>
+      <text x="165" y="155" fill="#f8fafc">client</text>
+      <text x="210" y="155" fill="#94a3b8">.</text>
+      <text x="220" y="155" fill="#67e8f9">sendSms</text>
+      <text x="290" y="155" fill="#94a3b8">(</text>
+      
+      <text x="20" y="185" fill="#94a3b8">[</text>
+      <text x="30" y="185" fill="#a5f3fc">'254712345678'</text>
+      <text x="170" y="185" fill="#94a3b8">,</text>
+      <text x="185" y="185" fill="#a5f3fc">'254723456789'</text>
+      <text x="325" y="185" fill="#94a3b8">],</text>
+      
+      <text x="20" y="215" fill="#a5f3fc">'Hello from TextWave! 🚀'</text>
+      
+      <text y="245" fill="#94a3b8">)</text>
+      
+      <text y="280" fill="#64748b">// result.success === true ✓</text>
+    </g>
+  </g>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#064e3b"/>
+  
+  <!-- Logo and branding -->
+  <g transform="translate(80, 592)">
+    <circle cx="15" cy="15" r="15" fill="#10b981"/>
+    <text x="15" y="21" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">T</text>
+    <text x="45" y="21" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">TextWave</text>
+  </g>
+  
+  <!-- Links -->
+  <text x="600" y="612" font-family="Arial, sans-serif" font-size="16" fill="#a7f3d0" text-anchor="middle">npmjs.com/package/textwave-sdk</text>
+  <text x="950" y="612" font-family="Arial, sans-serif" font-size="16" fill="#a7f3d0" text-anchor="middle">github.com/Text-Wave-Bulk-SMS/textwave-sdk-js</text>
+</svg>
