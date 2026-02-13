@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b"/>
+      <stop offset="50%" style="stop-color:#065f46"/>
+      <stop offset="100%" style="stop-color:#047857"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="#059669" opacity="0.2"/>
+  <circle cx="1180" cy="540" r="250" fill="#10b981" opacity="0.15"/>
+  <circle cx="1100" cy="100" r="120" fill="#34d399" opacity="0.1"/>
+  
+  <!-- Grid dots -->
+  <g fill="#ffffff" opacity="0.1">
+    <circle cx="50" cy="200" r="3"/>
+    <circle cx="50" cy="250" r="3"/>
+    <circle cx="50" cy="300" r="3"/>
+    <circle cx="100" cy="200" r="3"/>
+    <circle cx="100" cy="250" r="3"/>
+    <circle cx="100" cy="300" r="3"/>
+    <circle cx="1180" cy="340" r="3"/>
+    <circle cx="1180" cy="390" r="3"/>
+    <circle cx="1180" cy="440" r="3"/>
+    <circle cx="1230" cy="340" r="3"/>
+    <circle cx="1230" cy="390" r="3"/>
+    <circle cx="1230" cy="440" r="3"/>
+  </g>
+  
+  <!-- Logo icon -->
+  <g transform="translate(200, 220)">
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="90" fill="url(#logoGrad)"/>
+    
+    <!-- SMS/Chat bubble -->
+    <path d="M50 65 L150 65 Q160 65 160 75 L160 115 Q160 125 150 125 L90 125 L70 145 L70 125 L50 125 Q40 125 40 115 L40 75 Q40 65 50 65 Z" 
+          fill="white" opacity="0.95"/>
+    
+    <!-- Wave lines inside bubble -->
+    <g stroke="url(#logoGrad)" stroke-width="4" stroke-linecap="round" fill="none">
+      <path d="M55 82 Q70 75, 85 82 T115 82 T145 82"/>
+      <path d="M55 95 Q70 88, 85 95 T115 95 T145 95"/>
+      <path d="M55 108 Q70 101, 85 108 T115 108 T130 108"/>
+    </g>
+    
+    <!-- Signal dots -->
+    <circle cx="165" cy="55" r="5" fill="white" opacity="0.6"/>
+    <circle cx="175" cy="45" r="4" fill="white" opacity="0.4"/>
+    <circle cx="180" cy="35" r="3" fill="white" opacity="0.3"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="450" y="290" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="#ffffff">
+    TextWave SDK
+  </text>
+  
+  <text x="450" y="350" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#a7f3d0">
+    Official JavaScript/TypeScript SDK for Bulk SMS
+  </text>
+  
+  <!-- Features -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#ffffff" opacity="0.9">
+    <text x="450" y="420">✓ Send SMS to single or bulk recipients</text>
+    <text x="450" y="455">✓ Full TypeScript support</text>
+    <text x="450" y="490">✓ Check balance &amp; message history</text>
+  </g>
+  
+  <!-- npm badge -->
+  <rect x="450" y="530" width="200" height="40" rx="8" fill="#cb3837"/>
+  <text x="480" y="558" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">
+    npm i textwave-sdk
+  </text>
+  
+  <!-- GitHub badge -->
+  <rect x="670" y="530" width="180" height="40" rx="8" fill="#24292e"/>
+  <text x="700" y="558" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ffffff">
+    ⭐ Star on GitHub
+  </text>
+</svg>

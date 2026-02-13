@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" style="stop-color:#a7f3d0" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGrad)"/>
+  
+  <!-- SMS/Chat bubble -->
+  <path d="M50 65 L150 65 Q160 65 160 75 L160 115 Q160 125 150 125 L90 125 L70 145 L70 125 L50 125 Q40 125 40 115 L40 75 Q40 65 50 65 Z" 
+        fill="white" opacity="0.95"/>
+  
+  <!-- Wave lines inside bubble -->
+  <g stroke="url(#bgGrad)" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M55 82 Q70 75, 85 82 T115 82 T145 82"/>
+    <path d="M55 95 Q70 88, 85 95 T115 95 T145 95"/>
+    <path d="M55 108 Q70 101, 85 108 T115 108 T130 108"/>
+  </g>
+  
+  <!-- Small signal dots -->
+  <circle cx="165" cy="55" r="5" fill="white" opacity="0.6"/>
+  <circle cx="175" cy="45" r="4" fill="white" opacity="0.4"/>
+  <circle cx="180" cy="35" r="3" fill="white" opacity="0.3"/>
+</svg>

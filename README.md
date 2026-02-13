@@ -1,8 +1,26 @@
-# TextWave SDK
+<p align="center">
+  <img src="logo.svg" alt="TextWave SDK" width="120" height="120">
+</p>
 
-Official JavaScript/TypeScript SDK for the [TextWave](https://textwave.co.ke) Bulk SMS API.
+<h1 align="center">TextWave SDK</h1>
 
-[![npm version](https://badge.fury.io/js/textwave-sdk.svg)](https://www.npmjs.com/package/textwave-sdk)
+<p align="center">
+  Official JavaScript/TypeScript SDK for the <a href="https://textwave.co.ke">TextWave</a> Bulk SMS API.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/textwave-sdk"><img src="https://img.shields.io/npm/v/textwave-sdk.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/textwave-sdk"><img src="https://img.shields.io/npm/dm/textwave-sdk.svg" alt="npm downloads"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript"></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18%2B-brightgreen.svg" alt="Node.js"></a>
+</p>
+
+<p align="center">
+  <strong>Send bulk SMS in Kenya with ease. Built for developers.</strong>
+</p>
+
+---
 
 ## Installation
 
@@ -147,6 +165,20 @@ try {
 
 - Node.js 18+ (uses native `fetch`)
 - Or any environment with `fetch` support
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
 
 ## Support
 

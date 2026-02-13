@@ -15,7 +15,9 @@
     "files": [
         "dist",
         "README.md",
-        "LICENSE"
+        "LICENSE",
+        "CHANGELOG.md",
+        "logo.svg"
     ],
     "scripts": {
         "build": "tsup src/index.ts --format cjs,esm --dts --clean",
